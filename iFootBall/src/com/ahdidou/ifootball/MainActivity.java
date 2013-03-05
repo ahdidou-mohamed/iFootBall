@@ -15,7 +15,7 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.main);
 		Log.d(TAG, "onCreate");
 		Log.d(TAG, "onCreate");
-		
+		Log.d(TAG, "onCreate");
 	}
 
 	@Override
