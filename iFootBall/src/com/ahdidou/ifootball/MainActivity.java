@@ -6,13 +6,15 @@ import android.util.Log;
 import android.view.Menu;
 
 public class MainActivity extends Activity {
-
+	//Added Comment
 	private static final String TAG = "MainActivity";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
+		
+		
 		
 	}
 
