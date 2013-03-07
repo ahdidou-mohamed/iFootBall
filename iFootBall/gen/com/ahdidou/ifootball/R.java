@@ -9,6 +9,16 @@ package com.ahdidou.ifootball;
 
 public final class R {
     public static final class attr {
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int menuSize=0x7f010000;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -17,25 +27,38 @@ public final class R {
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f040000;
-        public static final int activity_vertical_margin=0x7f040001;
+        public static final int activity_horizontal_margin=0x7f050000;
+        public static final int activity_vertical_margin=0x7f050001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int dropshadow=0x7f020000;
+        public static final int ic_launcher=0x7f020001;
     }
     public static final class id {
-        public static final int action_settings=0x7f080000;
+        public static final int action_settings=0x7f080008;
+        public static final int appView=0x7f080003;
+        public static final int button1=0x7f080006;
+        public static final int dropshadow=0x7f080004;
+        public static final int fanView=0x7f080001;
+        public static final int fan_view=0x7f080007;
+        public static final int layout=0x7f080000;
+        public static final int textView1=0x7f080005;
+        public static final int tintView=0x7f080002;
     }
     public static final class layout {
-        public static final int main=0x7f030000;
+        public static final int fan_view=0x7f030000;
+        public static final int main=0x7f030001;
+        public static final int otherview=0x7f030002;
+        public static final int test=0x7f030003;
     }
     public static final class menu {
         public static final int main=0x7f070000;
     }
     public static final class string {
-        public static final int action_settings=0x7f050001;
-        public static final int app_name=0x7f050000;
-        public static final int hello_world=0x7f050002;
+        public static final int action_settings=0x7f040002;
+        public static final int app_name=0x7f040001;
+        public static final int hello=0x7f040000;
+        public static final int hello_world=0x7f040003;
     }
     public static final class style {
         /** 
@@ -65,4 +88,35 @@ public final class R {
          */
         public static final int AppTheme=0x7f060001;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a FanView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #FanView_menuSize com.ahdidou.ifootball:menuSize}</code></td><td></td></tr>
+           </table>
+           @see #FanView_menuSize
+         */
+        public static final int[] FanView = {
+            0x7f010000
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.ahdidou.ifootball.R.attr#menuSize}
+          attribute's value can be found in the {@link #FanView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:menuSize
+        */
+        public static final int FanView_menuSize = 0;
+    };
 }
